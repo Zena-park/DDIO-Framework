@@ -292,13 +292,13 @@ A_total (전체 시뇨리지)
 
 r(B)의 경우, $B < B_r$에서는 선형 함수 $r_0(1 - B/B_r)$이고, $B \geq B_r$에서는 상수 0이다. $B = B_r$에서:
 
-$$\lim_{B \to B_r^-} r(B) = r_0 \cdot 0 = 0 = r(B_r)$$
+$$\lim_{B \to B_r^{-}} r(B) = r_0 \cdot 0 = 0 = r(B_r)$$
 
 따라서 r(B)는 연속이다.
 
 λ(B)의 경우, $B < B_r$에서는 상수 1이고, $B \geq B_r$에서는 쌍곡선 함수이다. $B = B_r$에서:
 
-$$\lim_{B \to B_r^+} \lambda(B) = \lambda_{min} + (1-\lambda_{min}) \cdot 1 = 1 = \lim_{B \to B_r^-} \lambda(B)$$
+$$\lim_{B \to B_r^{+}} \lambda(B) = \lambda_{min} + (1-\lambda_{min}) \cdot 1 = 1 = \lim_{B \to B_r^{-}} \lambda(B)$$
 
 따라서 λ(B)도 연속이다. ∎
 
@@ -314,7 +314,7 @@ $$\lim_{B \to B_r^+} \lambda(B) = \lambda_{min} + (1-\lambda_{min}) \cdot 1 = 1 
 
 **λ(B)의 경우:**
 - $B < B_r$에서: $\lambda(B) = 1$ (상수)
-- $B > B_r$에서: $\frac{d\lambda}{dB} = -(1-\lambda_{min}) \cdot \frac{k}{(k+B-B_r)^2} < 0$ (단조 감소)
+- $B > B_r$에서: $\frac{d\lambda}{dB} = -(1-\lambda_{min}) \cdot \frac{k}{(k+B-B_r)^{2}} < 0$ (단조 감소)
 
 따라서 두 함수 모두 B에 대해 단조 비증가하며, 엄밀한 단조 감소가 아닌 구간별로 감소 또는 상수를 유지한다. ∎
 
@@ -334,11 +334,11 @@ $$\lim_{B \to \infty} \lambda(B) = \lambda_{min} + (1-\lambda_{min}) \cdot \lim_
 
 **계산**:
 
-$$\lambda(B^*) = \lambda_{min} + (1-\lambda_{min}) \cdot \frac{k}{k+B^*-B_r} = \frac{1+\lambda_{min}}{2}$$
+$$\lambda(B^{*}) = \lambda_{min} + (1-\lambda_{min}) \cdot \frac{k}{k+B^{*}-B_r} = \frac{1+\lambda_{min}}{2}$$
 
 이를 정리하면:
 
-$$B^* = B_r + k$$
+$$B^{*} = B_r + k$$
 
 **의미**: $B = B_r + k$일 때 λ 전환이 절반 완료된다.
 
@@ -358,7 +358,7 @@ $$APY_S = \frac{S_{staker}}{S} = \frac{A_{total}}{S} \cdot \left[\lambda \sigma 
 
 **증명**:
 
-$$\frac{\partial APY_S}{\partial S} = -\frac{A_{total}}{S^2} \cdot \left[\lambda \sigma + r(1-\lambda\sigma)\right]$$
+$$\frac{\partial APY_S}{\partial S} = -\frac{A_{total}}{S^{2}} \cdot \left[\lambda \sigma + r(1-\lambda\sigma)\right]$$
 
 $\lambda, \sigma, r \geq 0$이고 $A_{total} > 0$이므로, 이 값은 항상 음수이다. ∎
 
@@ -605,9 +605,9 @@ $B > B_r$에서 스테이커 APY의 B에 대한 민감도:
 
 $$\frac{d(APY_S)}{dB} = \frac{A_{total} \cdot \sigma}{S} \cdot \frac{d\lambda}{dB}$$
 
-$$= \frac{A_{total} \cdot \sigma}{S} \cdot \left(-(1-\lambda_{min}) \cdot \frac{k}{(k+B-B_r)^2}\right)$$
+$$= \frac{A_{total} \cdot \sigma}{S} \cdot \left(-(1-\lambda_{min}) \cdot \frac{k}{(k+B-B_r)^{2}}\right)$$
 
-충격의 크기 $|\frac{d(APY_S)}{dB}|$는 $(k+B-B_r)^2$에 반비례한다. B가 증가함에 따라 분모가 증가하므로 충격의 크기는 단조 감소한다.
+충격의 크기 $|\frac{d(APY_S)}{dB}|$는 $(k+B-B_r)^{2}$에 반비례한다. B가 증가함에 따라 분모가 증가하므로 충격의 크기는 단조 감소한다.
 
 ### B.2 λ_min 역산
 
