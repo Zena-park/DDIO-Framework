@@ -334,11 +334,11 @@ $$\lim_{B \to \infty} \lambda(B) = \lambda_{min} + (1-\lambda_{min}) \cdot \lim_
 
 **계산**:
 
-$$\lambda(B^{*}) = \lambda_{min} + (1-\lambda_{min}) \cdot \frac{k}{k+B^{*}-B_r} = \frac{1+\lambda_{min}}{2}$$
+$$\lambda(B^\ast) = \lambda_{min} + (1-\lambda_{min}) \cdot \frac{k}{k+B^\ast-B_r} = \frac{1+\lambda_{min}}{2}$$
 
 이를 정리하면:
 
-$$B^{*} = B_r + k$$
+$$B^\ast = B_r + k$$
 
 **의미**: $B = B_r + k$일 때 λ 전환이 절반 완료된다.
 
